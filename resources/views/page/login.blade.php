@@ -49,7 +49,7 @@
                         <form id="login-form" class="mb-3">
                             @csrf
                             <div class="mb-3">
-                                <label for="email" class="form-label">Username</label>
+                                <label for="email" class="form-label">Email</label>
                                 <input type="text" class="form-control" id="email" name="email"
                                     placeholder="Enter your username" value="{{ old('email') }}" autofocus />
                                 @error('email')
@@ -73,7 +73,6 @@
                                 <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>

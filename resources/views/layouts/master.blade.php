@@ -19,25 +19,31 @@
         href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="{{ asset('/assets/vendor/fonts/boxicons.css') }}" />
 
-    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="{{ asset('/assets/vendor/css/core.css') }}" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{{ asset('/assets/vendor/css/theme-default.css') }}"
+        class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="{{ asset('/assets/css/demo.css') }}" />
 
-    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="{{ asset('/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
 
-    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="{{ asset('/assets/vendor/libs/apex-charts/apex-charts.css') }}" />
 
-    <script src="../assets/vendor/js/helpers.js"></script>
-    <script src="../assets/js/config.js"></script>
+    <script src="{{ asset('/assets/vendor/js/helpers.js') }}"></script>
+    <script src="{{ asset('/assets/js/config.js') }}"></script>
 
     <!-- DataTables-->
-    <link rel="stylesheet" href="../assets/vendor/libs/datatables/css/dataTables.bootstrap5.css" />
-    <link rel="stylesheet" href="../assets/vendor/libs/datatables/css/fixedColumns.bootstrap5.css" />
+    <link rel="stylesheet" href="{{ asset('/assets/vendor/libs/datatables/css/dataTables.bootstrap5.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/assets/vendor/libs/datatables/css/fixedColumns.bootstrap5.css') }}" />
+
+    <!-- DataTables-->
+    <link rel="stylesheet" href="{{ asset('/assets/vendor/libs/sweetAlert2/css/animate.min.css') }}" />
 
     <!-- select2 -->
     {{-- <link rel="stylesheet" href="../assets/vendor/libs/select2/css/select2.css" /> --}}
+
+
 </head>
 
 <body>
@@ -68,7 +74,7 @@
     @include('partials.scripts')
 
     <style>
-        <style>.loading-overlay {
+        .loading-overlay {
             position: fixed;
             top: 0;
             left: 0;
@@ -90,7 +96,28 @@
             font-size: 1.2rem;
             color: #333;
         }
-    </style>
+
+        input[readonly] {
+            color: #333;
+        }
+
+        .table {
+            font-size: 15px;
+        }
+
+        .swal2-container {
+            z-index: 9999 !important;
+        }
+
+        /* .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .table {
+            width: auto !important;
+            table-layout: auto;
+        } */
     </style>
 
 </body>
