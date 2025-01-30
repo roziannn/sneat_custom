@@ -24,7 +24,6 @@ class PageController extends Controller
         return view('page.rolePermission');
     }
 
-
     function dashboardQc()
     {
 

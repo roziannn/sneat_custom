@@ -43,7 +43,6 @@
     <!-- select2 -->
     {{-- <link rel="stylesheet" href="../assets/vendor/libs/select2/css/select2.css" /> --}}
 
-
 </head>
 
 <body>
